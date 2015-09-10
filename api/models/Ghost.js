@@ -17,7 +17,7 @@ module.exports = {
            required: true
        },
       coordinates : {
-          type: 'json'
+          type: 'json', index:'2dsphere'
       }
 
   }
