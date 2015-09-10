@@ -11,7 +11,7 @@
 
 module.exports.bootstrap = function(cb) {
   sails.models.ghost.native(function (err, collection) {
-    collection.ensureIndex({ coordinates: '2dsphere' }, function () {
+    collection.ensureIndex({ location: '2dsphere' }, function () {
 
 
       cb();
