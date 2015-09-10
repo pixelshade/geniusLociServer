@@ -16,8 +16,8 @@ module.exports = {
            type: 'string',
            required: true
        },
-      loc : {
-          type: '2dsphere'
+      coordinates : {
+          type: 'json'
       }
 
   }
