@@ -9,8 +9,6 @@ module.exports = {
     'getNear': function (req, res) {
         Ghost.native(function (err, collection) {
 
-                var query = {};
-
                 var lon = parseFloat(req.param('longitude',0));
                 var lat = parseFloat(req.param('latitude',0));
                 collection.geoNear(
@@ -19,7 +17,8 @@ module.exports = {
                     {
                         spherical:true,
                         maxDistance: 5000,
-                        limit: 3
+                        limit: 3,
+                        distanceMultiplier: (6371 * Math.PI / 180.0)
                     },
                     function (mongoErr, docs) {
                         if (mongoErr) {
