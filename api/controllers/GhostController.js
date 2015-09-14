@@ -18,7 +18,7 @@ module.exports = {
                         spherical:true,
                         maxDistance: 5000,
                         limit: 3,
-                        distanceMultiplier: (6371 * Math.PI / 180.0)
+                        distanceMultiplier: 6378.1
                     },
                     function (mongoErr, docs) {
                         if (mongoErr) {
