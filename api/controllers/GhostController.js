@@ -6,6 +6,11 @@
  */
 
 module.exports = {
+//    'index': function (req, res) {
+//        res.view('landing')
+//    },
+
+
     'getNear': function (req, res) {
         Ghost.native(function (err, collection) {
 
