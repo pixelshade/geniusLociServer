@@ -6,9 +6,14 @@
  */
 
 module.exports = {
-//    'index': function (req, res) {
-//        res.view('landing')
-//    },
+    'index': function (req, res) {
+        Ghost.find().exec(function(err, ghosts) {
+            res.view('landing',{
+                ghosts: ghosts
+            });
+        });
+
+    },
 
 
     'getNear': function (req, res) {
