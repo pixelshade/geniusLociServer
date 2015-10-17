@@ -63,12 +63,12 @@ module.exports.policies = {
 
     AuthController: {
         '*': [ 'passport' ]
-    },
-
-    GhostController: {
-        '*': true,
-        'create': ['passport'],
-        'delete': ['passport'],
-        'edit': ['passport']
     }
+
+//    GhostController: {
+//        '*': true,
+//        'create': ['passport'],
+//        'delete': ['passport'],
+//        'edit': ['passport']
+//    }
 };
