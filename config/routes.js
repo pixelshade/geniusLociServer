@@ -32,7 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': 'GhostController.index'
+  '/': 'PageController.index'
 
 //      view: 'landing'
 

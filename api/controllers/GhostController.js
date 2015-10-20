@@ -6,15 +6,6 @@
  */
 
 module.exports = {
-    'index': function (req, res) {
-        Ghost.find().exec(function(err, ghosts) {
-            res.view('landing',{
-                ghosts: ghosts
-            });
-        });
-
-    },
-
 
     'getNear': function (req, res) {
         Ghost.native(function (err, collection) {
