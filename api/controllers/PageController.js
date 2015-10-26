@@ -13,6 +13,13 @@ module.exports = {
             });
         });
 
+    },
+    'browse': function (req, res) {
+        Ghost.find().exec(function(err, ghosts) {
+            res.view('browse',{
+                ghosts: ghosts
+            });
+        });
     }
 };
 
