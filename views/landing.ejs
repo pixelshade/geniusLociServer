@@ -168,7 +168,9 @@
             <div class="col-lg-10 col-lg-offset-1 text-center">
                 <h2>Ghosts near you</h2>
                 <hr class="small">
+                <div class="row" id="ghost-list">
 
+                </div>
 
                 <div class="row">
                     <% _.each(ghosts, function(ghost) { %>
@@ -195,7 +197,7 @@
 
                 </div>
                 <!-- /.row (nested) -->
-                <a href="./ghost" class="btn btn-dark">View More Items</a>
+                <a href="./browse" class="btn btn-dark">View More Items</a>
             </div>
             <!-- /.col-lg-10 -->
         </div>
@@ -252,3 +254,4 @@
 </footer>
 
 
+<% block('localScripts', '<script src="/js/landing.js"></script>') %>

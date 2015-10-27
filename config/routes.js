@@ -32,7 +32,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': 'PageController.index'
+  '/': 'PageController.index',
+  '/browse': 'PageController.browse'
 
 //      view: 'landing'
 
