@@ -41,7 +41,7 @@ function setUserGeoPosition(position){
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
 
-  var callback = new EJS({url: 'templates/ghosts.ejs'}).update('#ghost-list');
+  var callback = new ejs({url: '/templates/ghost_list.ejs'}).update('#ghost-list');
   $.getJSON("/ghost/getNear?latitude=" + lat + "&longitude=" + lon,
     callback);
 

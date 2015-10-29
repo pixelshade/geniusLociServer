@@ -1,0 +1,14 @@
+<% var ghosts = data %>
+<% if(ghosts){ %>
+
+
+<div id='events_container'>
+<ul>
+  <% for (var i = 0; i < ghosts.length; i++) { %>
+  <li>
+    <% include ghost.ejs %>
+  </li>
+  <% } %>
+</ul>
+</div>
+<% } %>
